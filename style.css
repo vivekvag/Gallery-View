@@ -1,0 +1,196 @@
+body {
+  font-style: 'Days One', sans-serif;
+  margin: 50px 40px;
+}
+
+h1{
+  font-size: 44px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px;
+  margin: auto;
+  width: 50vh;
+
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+figure{
+  margin: 32px 0;
+  background-color: black ;
+  height: 450px;
+  width: 30%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+i{
+  color:#F2f2f2;
+
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  font-size: 100px;
+  padding: 0;
+}
+
+figcaption{
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #232323;
+}
+
+
+figure:nth-child(1){ background-image: url("images/beach_1.jpg"); position: relative;}
+figure:nth-child(2){ background-image: url("images/beach_2.jpg"); position: relative;}
+figure:nth-child(3){ background-image: url("images/beach_3.jpg"); position: relative;}
+figure:nth-child(4){ background-image: url("images/beach_4.jpg"); position: relative;}
+figure:nth-child(5){ background-image: url("images/beach_5.jpg"); position: relative;}
+figure:nth-child(6){ background-image: url("images/beach_6.jpg"); position: relative;}
+figure:nth-child(7){ background-image: url("images/beach_7.jpg"); position: relative;}
+figure:nth-child(8){ background-image: url("images/beach_8.jpg"); position: relative;}
+figure:nth-child(9){ background-image: url("images/beach_9.jpg"); position: relative;}
+figure:nth-child(10){ background-image: url("images/beach_10.jpg"); position: relative;}
+figure:nth-child(11){ background-image: url("images/beach_11.jpg"); position: relative;}
+figure:nth-child(12){ background-image: url("images/beach_12.jpg"); position: relative;}
+
+@media (max-width: 1200px) {
+  figure{
+    width: 48%;
+  }
+  figcaption{
+    font-size:16px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  figure{
+    width: 100%;
+
+
+  }
+  body{
+    margin: 30px 15px;
+  }
+
+  figcaption{
+    font-size:14px;
+  }
+
+}
+
+figcaption:hover{
+  color: red;
+}
+
+
+
+figure:nth-child(1):hover background-image{
+  opacity: 0.3;
+}
+
+@keyframes fade-1 {
+  0%{
+    transform: translate(-1600px);
+    opacity: 0;
+  }
+
+  90%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: translate(0);
+  }
+}
+
+.fade-1{
+   animation: fade-1 .6s;
+
+}
+@keyframes fade-2 {
+  0%{
+    transform: translateY(-1600px);
+    opacity: 0;
+  }
+
+  90%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.fade-2{
+   animation: fade-2 .6s;
+
+}
+@keyframes fade-3 {
+  0%{
+    transform: translateX(1600px);
+    opacity: 0;
+  }
+
+  90%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.fade-3{
+   animation: fade-3 .6s;
+
+}
+
+.fade-4{
+  animation: fade-1 .6s 1s;
+  animation-fill-mode: backwards;
+}
+.fade-5{
+  animation: fade-2 .6s 1s;
+  animation-fill-mode: backwards;
+}
+.fade-6{
+  animation: fade-3 .6s 1s;
+  animation-fill-mode: backwards;
+}
+
+.fade-7{
+  animation: fade-1 .6s 1.5s;
+  animation-fill-mode: backwards;
+}
+.fade-8{
+  animation: fade-2 .6s 1.5s;
+  animation-fill-mode: backwards;
+}
+.fade-9{
+  animation: fade-3 .6s 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.fade-10{
+  animation: fade-1 .6s 2s;
+  animation-fill-mode: backwards;
+}
+.fade-11{
+  animation: fade-2 .6s 2s;
+  animation-fill-mode: backwards;
+}
+.fade-12{
+  animation: fade-3 .6s 1s;
+  animation-fill-mode: backwards;
+}
