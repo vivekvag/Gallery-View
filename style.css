@@ -92,6 +92,9 @@ figcaption:hover{
   color: red;
 }
 
+figure:hover{
+  transform: scale(1.1);
+}
 
 
 figure:nth-child(1):hover background-image{
