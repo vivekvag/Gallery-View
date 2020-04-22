@@ -29,15 +29,7 @@ figure{
   background-position: center;
 }
 
-i{
-  color:#F2f2f2;
 
-  position: absolute;
-  top: 45%;
-  left: 42%;
-  font-size: 100px;
-  padding: 0;
-}
 
 figcaption{
   display: flex;
@@ -75,17 +67,19 @@ figure:nth-child(12){ background-image: url("images/beach_12.jpg"); position: re
 @media (max-width: 600px) {
   figure{
     width: 100%;
-
-
   }
   body{
     margin: 30px 15px;
+    padding: auto;
   }
 
   figcaption{
     font-size:14px;
   }
+  h1{
+    font-size: 30px;
 
+  }
 }
 
 figcaption:hover{
@@ -95,7 +89,6 @@ figcaption:hover{
 figure:hover{
   transform: scale(1.1);
 }
-
 
 figure:nth-child(1):hover background-image{
   opacity: 0.3;
